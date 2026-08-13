@@ -10,8 +10,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
 import Notes from "./components/Notes";
 import ProtectedRoute from "./components/ProtectedRoute";
 

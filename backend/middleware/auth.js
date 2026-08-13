@@ -1,18 +1,3 @@
-/**
- * AUTH MIDDLEWARE (JWT Protection)
- * --------------------------------
- * Middleware runs BETWEEN the request and the route handler.
- *
- * Flow:
- * 1. Client sends request with header: Authorization: Bearer <token>
- * 2. This middleware extracts and verifies the JWT
- * 3. If valid, we attach the user ID to req.user and call next()
- * 4. If invalid, we return 401 Unauthorized
- *
- * JWT (JSON Web Token) = a signed string containing user info (payload).
- * The server signs it with JWT_SECRET so it can't be tampered with.
- */
-
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
